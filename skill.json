@@ -1,0 +1,42 @@
+{
+  "name": "genpark-influencer-brand-safety-controversy-auditor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Influencer brand safety and controversy auditor crawling multi-year post histories to detect toxicity, hate speech, and brand risk.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "brand-safety",
+  "tags": [
+    "brand-safety",
+    "influencer-audit",
+    "controversy-detector",
+    "toxicity-filter",
+    "reputation-risk"
+  ],
+  "inputs": {
+    "creator_handle": {
+      "type": "string"
+    },
+    "lookback_months_count": {
+      "type": "integer"
+    },
+    "risk_tolerance_threshold": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "safety_audit_id": {
+      "type": "string"
+    },
+    "brand_safety_score_pct": {
+      "type": "number"
+    },
+    "brand_safety_clearance_verdict": {
+      "type": "string"
+    },
+    "historical_toxicity_heatmap_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
